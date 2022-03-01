@@ -8,7 +8,7 @@ const About = () => {
                 <div id='main-text' className='max-w-2xl'>
                     <p>Hey, Achraf here 👋</p>
                     <p>
-                        I’m an undergraduate student{' '}
+                        I&apos;m an undergraduate student{' '}
                         <a
                             target='_blank'
                             rel='noreferrer'
@@ -29,7 +29,7 @@ const About = () => {
 
                     <p>
                         Long term, I want to change how the healthcare system
-                        work. It's broken.
+                        work. It&apos;s broken.
                     </p>
                     <a
                         target='_blank'
