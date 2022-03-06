@@ -15,6 +15,7 @@ out/
 # production
 build/
 dist/
+sitemap.xml
 
 # misc
 .DS_Store

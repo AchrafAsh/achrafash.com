@@ -3,8 +3,9 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "npx turbo run build"
+        "build": "turbo run build",
+        "dev": "turbo run dev --parallel",
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",
@@ -24,7 +25,8 @@
                 "dependsOn": [
                     "^build"
                 ],
-                "output": [
+                "outputs": [
+                    "build/**",
                     "./next/**"
                 ]
             },
@@ -35,7 +37,7 @@
                 "outputs": []
             },
             "lint": {
-                "output": []
+                "outputs": []
             },
             "dev": {
                 "cache": false
@@ -48,5 +50,6 @@
     ],
     "devDependencies": {
         "turbo": "^1.1.5"
-    }
+    },
+    "packageManager": "npm@8.1.3"
 }
