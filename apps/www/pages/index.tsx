@@ -4,7 +4,7 @@ import Layout from '../src/components/layout'
 const About = () => {
     return (
         <Layout>
-            <main className='max-w-6xl mx-auto p-4 flex space-x-24'>
+            <main className='max-w-6xl mx-auto p-4 flex flex-col space-y-20 md:flex-row md:space-y-0 md:space-x-20'>
                 <div id='main-text' className='max-w-2xl'>
                     <p>Hey, Achraf here 👋</p>
                     <p>

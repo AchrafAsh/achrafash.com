@@ -10,7 +10,7 @@ const EmailForm = () => {
     }
 
     return (
-        <div>
+        <div className='max-w-sm'>
             <p>
                 Leave your email below if you want to be notified when I drop
                 something cool

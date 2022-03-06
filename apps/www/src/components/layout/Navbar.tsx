@@ -20,7 +20,7 @@ const Navbar = () => (
         </div>
         <hr />
         <div className='p-4 max-w-6xl mx-auto'>
-            <nav className='flex space-x-8 uppercase text-xs'>
+            <nav className='flex justify-between space-x-4 uppercase text-xs max-w-md'>
                 <Link href='/'>
                     <a className='text-gray-800 hover:no-underline font-medium'>
                         About

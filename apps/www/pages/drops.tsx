@@ -4,9 +4,7 @@ const ResearchIndex = () => {
     return (
         <Layout title='Research Blog'>
             <main className='max-w-4xl mx-auto'>
-                <p>
-                    There will be my list of <marker>Drops</marker>
-                </p>
+                <p>More soon</p>
             </main>
         </Layout>
     )
