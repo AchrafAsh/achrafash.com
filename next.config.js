@@ -1,6 +1,15 @@
 /** @type {import('next').NextConfig} */
+const withMDX = require('@next/mdx')({
+    extension: /\.mdx?$/,
+    options: {
+        remarkPlugins: [],
+        rehypePlugins: []
+        // If you use `MDXProvider`, uncomment the following line.
+        // providerImportSource: "@mdx-js/react",
+    }
+})
 
-;(function buildSitemap() {
+function buildSitemap() {
     if (process.env.NODE_ENV !== 'production') return
 
     const sitemap = require('nextjs-sitemap-generator')
@@ -19,7 +28,8 @@
             'early-access'
         ]
     })
-})()
+}
+if (process.env.NODE_ENV === 'production') buildSitemap()
 
 const nextConfig = {
     reactStrictMode: true,
@@ -27,7 +37,8 @@ const nextConfig = {
         return {
             '/': { page: '/' }
         }
-    }
+    },
+    pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx']
 }
 
-module.exports = nextConfig
+module.exports = withMDX(nextConfig)

@@ -1,5 +1,5 @@
-import EmailForm from '../src/components/EmailForm'
-import Layout from '../src/components/layout'
+import EmailForm from 'components/email-form'
+import Layout from 'components/layout'
 
 const About = () => {
     return (

@@ -1,7 +1,7 @@
-import { FC } from 'react'
-import Navbar from './Navbar'
-import Footer from './Footer'
+import type { FC } from 'react'
 import Head from 'next/head'
+import Navbar from './navbar'
+import Footer from './footer'
 
 const Layout: FC<{ title?: string }> = ({ children, title }) => (
     <div className='min-h-screen flex flex-col'>

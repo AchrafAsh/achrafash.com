@@ -15,7 +15,7 @@ const Footer = () => (
                 <a
                     target='_blank'
                     rel='noreferrer'
-                    href='https://twitter.com/itsAchrafAsh'
+                    href='https://twitter.com/AchrafTOTW'
                 >
                     Twitter
                 </a>

@@ -26,7 +26,7 @@ const Navbar = () => (
                         About
                     </a>
                 </Link>
-                <Link href='/research'>
+                {/* <Link href='/research'>
                     <a className='text-gray-800 hover:no-underline font-medium'>
                         Research
                     </a>
@@ -40,7 +40,7 @@ const Navbar = () => (
                     <a className='text-gray-800 hover:no-underline font-medium'>
                         Drops
                     </a>
-                </Link>
+                </Link> */}
             </nav>
         </div>
         <hr />

@@ -1,5 +1,5 @@
 module.exports = {
-    content: ['./pages/**/*.tsx', './src/components/**/*.tsx'],
+    content: ['./pages/**/*.tsx', './components/**/*.tsx'],
     theme: {
         fontFamily: {
             sans: [
