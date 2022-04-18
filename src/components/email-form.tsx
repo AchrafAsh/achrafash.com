@@ -1,6 +1,3 @@
-// import { useForm, ValidationError } from '@formspree/react'
-import { useState } from 'react'
-
 // TODO - add a cool transition on the form submission
 
 const EmailForm = () => {

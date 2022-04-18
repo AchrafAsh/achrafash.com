@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import Link from 'next/link'
 import EmailForm from '../email-form'
-import Layout from '../layout'
+import { Layout } from '../layout'
 
 interface ArticleLayoutProps {
     publishedAt: Date
