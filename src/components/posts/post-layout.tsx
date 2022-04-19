@@ -33,28 +33,30 @@ const PostLayout: FC<ArticleLayoutProps> = ({
 
             <div className='relative hidden lg:block'>
                 <aside className='mt-32 py-12 top-0 sticky'>
-                    <nav className='p-6 rounded-md bg-gray-100 mb-6'>
-                        <h4 className='text-xs uppercase font-semibold text-gray-700'>
-                            Table of contents
-                        </h4>
+                    {toc && (
+                        <nav className='p-6 rounded-md bg-gray-100 mb-6'>
+                            <h4 className='text-xs uppercase font-semibold text-gray-700'>
+                                Table of contents
+                            </h4>
 
-                        <ul className='space-y-2 text-sm font-light'>
-                            {/* // TODO - manage the state of active link using useRef */}
-                            {toc.map((el, idx) => (
-                                <li key={idx} className='flex items-center'>
-                                    <div className='w-4'>
-                                        <div className='w-1.5 h-1.5 rounded-full bg-blue-500' />
-                                    </div>
-                                    <Link href='#'>
-                                        {/* FIXME - add the right link */}
-                                        <a className='hover:no-underline text-gray-900 font-normal'>
-                                            {el}
-                                        </a>
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </nav>
+                            <ul className='space-y-2 text-sm font-light'>
+                                {/* // TODO - manage the state of active link using useRef */}
+                                {toc.map((el, idx) => (
+                                    <li key={idx} className='flex items-center'>
+                                        <div className='w-4'>
+                                            <div className='w-1.5 h-1.5 rounded-full bg-blue-500' />
+                                        </div>
+                                        <Link href='#'>
+                                            {/* FIXME - add the right link */}
+                                            <a className='hover:no-underline text-gray-900 font-normal'>
+                                                {el}
+                                            </a>
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </nav>
+                    )}
                     <hr className='mb-6' />
                     <EmailForm />
                 </aside>
