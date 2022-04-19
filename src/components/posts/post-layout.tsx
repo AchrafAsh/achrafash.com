@@ -33,7 +33,7 @@ const PostLayout: FC<ArticleLayoutProps> = ({
 
             <div className='relative hidden lg:block'>
                 <aside className='mt-32 py-12 top-0 sticky'>
-                    {toc && (
+                    {toc && toc.length > 0 && (
                         <nav className='p-6 rounded-md bg-gray-100 mb-6'>
                             <h4 className='text-xs uppercase font-semibold text-gray-700'>
                                 Table of contents
