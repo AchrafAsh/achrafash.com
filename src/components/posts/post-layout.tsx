@@ -21,9 +21,9 @@ const PostLayout: FC<ArticleLayoutProps> = ({
                 <header className='mb-12'>
                     <time
                         className='text-xs font-light uppercase text-gray-500'
-                        dateTime={publishedAt.toDateString()}
+                        dateTime={new Date(publishedAt).toDateString()}
                     >
-                        {publishedAt.toDateString()}
+                        {new Date(publishedAt).toDateString()}
                     </time>
                     <h1 className='mt-2'>{title}</h1>
                 </header>
