@@ -1,0 +1,52 @@
+import { PostLayout } from '@/components/posts'
+
+export const title = 'What Game Are You Playing?'
+export const tag = 'daily'
+export const publishedAt = '2022-4-21'
+export const toc = []
+
+If you wanna win in life you gotta know what game you're playing.
+
+There are many games out there:
+
+-   professional athlete
+-   secure job > buy a house > save money (low-risk / low-reward)
+-   credentials: stanford > google > ex-google backed by YC, Sequoia, a16z > Forbes 30 Under 30 > blue checkmark on Twitter
+-   solo founder bootstrapping a lifestyle business
+
+and many more.
+
+But be careful. If you don't pick the game, society will pick it for you. And you'll feel miserable.
+
+Why? Because you haven't chosen the rules. They will suck. It won't feel like a game.
+
+For the past few months I did feel miserable. I was playing the credentials game even though I didn&apos;t want to. I was being deceived by the system. I was picking projects based on how cool they'd look in my resume. A resume that I don&apos;t even intend to use...
+
+But sometimes we are so pilled by the system that it's hard to pick the right game.
+
+I&apos;ve been drinking the startup kool-aid for the past 2-3 years. I watched every YouTube videos out there, read all the books. And yet I&apos;d never even considered the possibility of entrepreneurship. It wasn&apos;t in my book.
+
+But I tried other games and they just don&apos;t make sense to me:
+
+-   credentials: I dabbled with it, and now I see how bullshit they are
+-   VC-backed startups: this is a large group, but I definitely don&apos;t want to play the vanity / status game
+-   Fat FIRE: I don&apos;t really care about money, a couple grands a month is more than enough to me. But I do care about the craft.
+
+Now it&apos;s all about defining the rules. Or in other words, my personal values. Julian Shapiro has [a great essay on that topic](https://www.julian.com/blog/life-planning).
+
+Here&apos;s what I&apos;ve figured out so far:
+
+-   I don&apos;t want to do something for money, but I want financial freedom
+-   I want to build the technologies of the future
+-   I want to build a strong founder-led company, deeply passionate about their customers, like Nathan Bary and Tobi Lutke
+
+But I&apos;ll be honest with you. All of that is a bit too abstract at the moment and I&apos;m not really sure where I go from there...
+
+export default ({ children }) => (
+    <PostLayout
+        title={title}
+        publishedAt={publishedAt}
+        toc={toc}
+        children={children}
+    />
+)
