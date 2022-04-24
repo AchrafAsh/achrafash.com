@@ -43,6 +43,20 @@ function getAllPosts() {
             excerpt:
                 "If you wanna win in life you gotta know what game you're playing. There are many games out there",
             publishedAt: new Date('2022-4-21').toJSON()
+        },
+        {
+            slug: '004',
+            title: 'Dopamine Detox',
+            excerpt:
+                "These past days you couldn't get yourself out of bed. You felt empty. No motivation, no joy. You felt like you had no goals, no drive, no purpose.",
+            publishedAt: new Date('2022-4-22').toJSON()
+        },
+        {
+            slug: '006',
+            title: 'Just Shut Up And Build',
+            excerpt:
+                "I've been working a lot on listening to myself and doing self-therapy / trying to show empathy for myself by trying to understand my feelings and why do I feel that way",
+            publishedAt: new Date('2022-4-24').toJSON()
         }
     ]
 }
