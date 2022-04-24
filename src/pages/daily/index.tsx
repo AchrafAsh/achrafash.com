@@ -62,7 +62,11 @@ function getAllPosts() {
 }
 
 export const getStaticProps = () => {
-    const posts = getAllPosts()
+    const posts = getAllPosts().sort(
+        (a, b) =>
+            new Date(b.publishedAt).getTime() -
+            new Date(a.publishedAt).getTime()
+    )
 
     return {
         props: { posts }
